@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
     margin: 0;
 }
 
@@ -24,6 +25,7 @@ body {
     height: 170px;
     float: left;
 }
+
 .container {
     width: 800px;
     margin: 0 auto;
