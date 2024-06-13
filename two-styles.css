@@ -31,8 +31,10 @@ p {
 }
 .photo {
     width: 30%;
+    padding: 30px;
 }
 .heading {
     background-color: aqua;
     width: 70%;
+    padding: 30px;
 }
