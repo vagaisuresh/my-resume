@@ -11,10 +11,15 @@ p {
     background-color: aliceblue;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr auto;
+    /* grid-template-rows: 1fr auto; */
     max-width: 800px;
     margin: 0 auto;
     height: 100%;
+}
+.first-grid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
 }
 .box-left {
     background-color: rgb(73, 73, 73);
@@ -23,4 +28,11 @@ p {
 .box-right {
     background-color: aliceblue;
     padding: 30px;
+}
+.photo {
+    width: 30%;
+}
+.heading {
+    background-color: aqua;
+    width: 70%;
 }
