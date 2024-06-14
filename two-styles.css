@@ -39,6 +39,7 @@ p {
 } */
 .box-left {
     background-color: rgb(42, 45, 55);
+    color: white;
     padding: 30px;
 }
 .box-right {
@@ -65,8 +66,8 @@ p {
 
 .title-box {
     background-color: aquamarine;
-    position: absolute;
-    left: 287px;
+    position: relative;
+    left: -60px;
     padding: 20px;
     margin: 30px 0 0 0;
     width: 480px;
@@ -75,12 +76,21 @@ p {
     padding-left: 50px;
 }
 .title-box h1 {
-    color: brown;
+    color:  rgba(0, 104, 104, 0.9);
     text-transform: uppercase;
     padding: 0;
     margin: 0;
 }
 .title-box p {
-    color: darkgreen;
+    color: rgb(0, 124, 87);
     margin: 5px 0;
+}
+
+.contact ul {
+    list-style: none;
+    font-size: 0.8rem;
+    padding-left: 0;
+}
+.contact ul li {
+    padding-bottom: 5px;
 }
