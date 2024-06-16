@@ -12,6 +12,7 @@ h2 {
     border-bottom: 2px solid rgba(0, 160, 160, 0.8);
     padding-bottom: 5px;
     margin: 0;
+    text-transform: uppercase;
 }
 h3 {
     font-size: 0.9rem;
@@ -61,7 +62,7 @@ p {
     width: 520px;
 }
 .title-box > div {
-    padding-left: 50px;
+    padding-left: 80px;
 }
 .title-box h1 {
     color:  rgba(0, 104, 104, 0.9);
@@ -90,6 +91,20 @@ p {
 .description {
     font-size: 0.8rem;
     text-align: justify;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 100%;
+}
+.project-head {
+    font-size: 0.8rem;
+    padding: 5px 0 2px 0;
+}
+.project-skill {
+    color: gray;
+    font-size: 0.7rem !important;
+    padding-left: 15px;
 }
 
 /* LEFT SIDE */
