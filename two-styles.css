@@ -47,7 +47,7 @@ p {
     background-color: rgb(42, 45, 55);
 }
 .photo img {
-    border: 5px solid white;
+    border: 5px solid rgba(255, 255, 255, 0.9);
     border-radius: 10%;
     object-fit: cover;
     width: 100px;
