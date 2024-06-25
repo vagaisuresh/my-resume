@@ -157,3 +157,27 @@ grade {
     padding: 0 5px 2px 2px;
     margin: 2px 0;
 }
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+    .photo {
+        display: inline;
+        margin: 0 auto;
+        padding: 30px;
+        text-align: center;
+    }
+    .pad-zero {
+        padding: 0;
+    }
+    .title-box {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .title-box div {
+        padding-left: 0;
+    }
+}
