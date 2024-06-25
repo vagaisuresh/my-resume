@@ -169,6 +169,9 @@ grade {
         padding: 30px;
         text-align: center;
     }
+    .photo img {
+        margin: 30px 0;
+    }
     .pad-zero {
         padding: 0;
     }
