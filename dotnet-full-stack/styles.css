@@ -20,9 +20,9 @@ h3 {
 h4 {
     font-size: 0.8ren;
 }
-p {
+/* p {
     box-sizing: border-box;
-}
+} */
 .container {
     background-color: aliceblue;
     display: grid;
@@ -91,7 +91,6 @@ p {
 }
 .description {
     font-size: 0.8rem;
-    text-align: justify;
 }
 
 .projects {
@@ -115,9 +114,21 @@ p {
     font-size: 0.8rem;
     padding-left: 0;
     margin: 5px 0;
+    padding-inline-start: 0;
 }
 .contact ul li {
     padding-bottom: 5px;
+}
+.contact p {
+    padding: 0;
+    margin: 0;
+}
+.svg-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    color: rgba(107, 115, 138, 0.7);
+    vertical-align: middle;
 }
 
 .education span {
@@ -159,7 +170,7 @@ grade {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 450) {
     .container {
         grid-template-columns: 100%;
     }
@@ -176,11 +187,16 @@ grade {
         padding: 0;
     }
     .title-box {
+        left: 0px;
         margin: 0;
         padding: 10px 0;
         text-align: center;
+        width: 100%;
     }
     .title-box div {
         padding-left: 0;
+    }
+    #objective {
+        display: none;
     }
 }
