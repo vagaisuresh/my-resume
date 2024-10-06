@@ -21,10 +21,25 @@ h4 {
     font-size: 0.8ren;
     margin: 10px 0 10px 0;
 }
+a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0;
+}
+a:hover {
+    color: lightslategray;
+}
+a:active {
+    color: white;
+}
+a:visited {
+    color: white;
+}
+
 /* p {
     box-sizing: border-box;
 } */
-.container {
+.page {
     background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -35,11 +50,11 @@ h4 {
 .box-left {
     background-color: rgb(42, 45, 55);
     color: white;
-    padding: 30px;
+    padding: 25px;
 }
 .box-right {
     background-color: whitesmoke;
-    padding: 30px;
+    padding: 25px;
 }
 .pad-zero {
     padding-bottom: 0;
@@ -47,7 +62,7 @@ h4 {
     padding-right: 0;
 }
 .pad-b-zero {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 0;
 }
 .photo {
@@ -67,7 +82,7 @@ h4 {
     background-color: aquamarine;
     position: relative;
     /* left: -100px; */
-    padding: 15px 30px;
+    padding: 15px 25px;
     margin: 25px 0 0 0;
     /* width: 520px; */
 }
@@ -199,6 +214,19 @@ grade {
     margin: 2px 0;
 }
 
+/* PROFILE LINKS */
+
+.profile-links span {
+    display: block;
+    font-size: 0.9rem;
+    line-height: normal;
+    padding: 5px 2px;
+    margin: 0;
+}
+.svg-icon {
+    vertical-align: middle;
+}
+
 /* @media (max-width: 700px) {
     .title-box {
         left: 0px;
@@ -209,17 +237,17 @@ grade {
     }
 } */
 @media (max-width: 450px) {
-    .container {
+    .page {
         grid-template-columns: 100%;
     }
     .photo {
         display: inline;
         margin: 0 auto;
-        /* padding: 30px; */
+        /* padding: 25px; */
         /* text-align: center; */
     }
     .photo img {
-        margin: 30px 0;
+        margin: 25px 0;
     }
     .pad-zero {
         padding: 0;
@@ -236,9 +264,21 @@ grade {
         width: 100%;
     }
     .title-box div {
-        padding-left: 30px;
+        padding-left: 25px;
     }
     #objective {
         display: none;
+    }
+}
+
+/* Page break for printing */
+@media print {
+    body {
+        margin: 0; /* Reset margin for body when printing */
+    }
+    .page-break {
+        /* page-break-before: always; */ /* Ensure new page starts here */
+        page-break-after: always; /* Ensures separation between sections */
+        margin: 0; /* Remove margin around page break */
     }
 }
