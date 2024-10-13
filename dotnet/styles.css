@@ -40,6 +40,7 @@ a:visited {
     box-sizing: border-box;
 } */
 .page {
+    border: 1px solid red;
     background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -56,6 +57,16 @@ a:visited {
     background-color: whitesmoke;
     padding: 25px;
 }
+
+.page2 {
+    border: 1px solid blue;
+    background-color: aliceblue;
+    
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100%;
+}
+
 .pad-zero {
     padding-bottom: 0;
     padding-left: 0;
@@ -239,6 +250,9 @@ grade {
 @media (max-width: 450px) {
     .page {
         grid-template-columns: 100%;
+    }
+    .page-break {
+        display: none;
     }
     .photo {
         display: inline;
