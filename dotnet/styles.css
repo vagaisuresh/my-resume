@@ -27,7 +27,7 @@ a {
     margin-top: 0;
 }
 a:hover {
-    color: lightslategray;
+    color: rgb(138, 153, 170) !important;
 }
 a:active {
     color: white;
@@ -36,11 +36,8 @@ a:visited {
     color: white;
 }
 
-/* p {
-    box-sizing: border-box;
-} */
 .page {
-    border: 1px solid red;
+    border: 0px solid red;
     background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 70%;
@@ -87,6 +84,13 @@ a:visited {
     width: 100px;
     vertical-align: bottom;
     margin: 0 auto;
+}
+
+#second-left-side {
+    display: none;
+}
+.second-botton {
+    display: none;
 }
 
 .title-box {
@@ -161,33 +165,6 @@ ul li {
     font-weight: 500;
 }
 
-/* .contact img {
-    color: red;
-    vertical-align: middle;
-} */
-/* .contact ul {
-    list-style: none;
-    color:blanchedalmond;
-    font-size: 0.8rem;
-    padding-left: 0;
-    margin: 5px 0;
-    padding-inline-start: 0;
-}
-.contact ul li {
-    padding-bottom: 5px;
-}
-.contact p {
-    padding: 0;
-    margin: 0;
-} */
-/* .svg-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 2px;
-    color: rgba(107, 115, 138, 0.7);
-    vertical-align: middle;
-} */
-
 .education span {
     display: block;
     font-size: 0.8rem;
@@ -254,11 +231,16 @@ grade {
     .page-break {
         display: none;
     }
+    .second-left {
+        display: none;
+    }
+    .second-botton {
+        display: block;
+    }
+
     .photo {
         display: inline;
         margin: 0 auto;
-        /* padding: 25px; */
-        /* text-align: center; */
     }
     .photo img {
         margin: 25px 0;
@@ -274,7 +256,6 @@ grade {
         left: 0px;
         margin: 0;
         padding: 10px 0;
-        /* text-align: center; */
         width: 100%;
     }
     .title-box div {
