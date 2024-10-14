@@ -269,11 +269,11 @@ grade {
 /* Page break for printing */
 @media print {
     body {
-        margin: 0; /* Reset margin for body when printing */
+        margin: 0;                          /* Reset margin for body when printing */
     }
     .page-break {
-        /* page-break-before: always; */ /* Ensure new page starts here */
-        page-break-after: always; /* Ensures separation between sections */
-        margin: 0; /* Remove margin around page break */
+        /* page-break-before: always; */    /* Ensure new page starts here */
+        page-break-after: always;           /* Ensures separation between sections */
+        margin: 0;                          /* Remove margin around page break */
     }
 }
