@@ -98,10 +98,8 @@ a:visited {
 .title-box {
     background-color: aquamarine;
     position: relative;
-    /* left: -100px; */
     padding: 15px 25px;
     margin: 25px 0 0 0;
-    /* width: 520px; */
 }
 .title-box > div {
     padding-left: 0;
@@ -226,6 +224,7 @@ grade {
         width: 100%;
     }
 } */
+
 @media (max-width: 450px) {
     .page {
         grid-template-columns: 100%;
