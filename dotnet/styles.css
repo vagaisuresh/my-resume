@@ -17,7 +17,8 @@ h2 {
 }
 h3 {
     font-size: 0.9rem;
-    margin: 10px 0 0 0;
+    margin: 8px 0;
+    text-transform: uppercase;
 }
 h4 {
     font-size: 0.8ren;
@@ -60,7 +61,6 @@ a:visited {
 .page2 {
     border: 1px solid blue;
     background-color: aliceblue;
-    
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
@@ -125,6 +125,7 @@ a:visited {
     border-bottom: 1px solid rgba(107, 115, 138, 0.5);
     border-right: 1px solid rgba(107, 115, 138, 0.5);
     border-radius: 4px;
+    float: right;
     font-size: 0.7rem;
     padding: 1px 7px;
 }
