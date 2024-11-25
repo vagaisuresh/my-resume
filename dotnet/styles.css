@@ -77,10 +77,11 @@ ul li {
     padding: 25px;
 }
 
-/* PAGES AFTER FIRST */
+/* PAGES FROM TWO */
 
 .page-container {
     /* background-color: whitesmoke; */
+    border: 1px solid whitesmoke;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -127,12 +128,12 @@ ul li {
     margin: 0 auto;
 }
 
-#second-left-side {
+/* #second-left-side {
     display: none;
 }
 .second-botton {
     display: none;
-}
+} */
 
 .title-box {
     background-color: aquamarine;
@@ -171,7 +172,6 @@ ul li {
 .description {
     font-size: 1rem;
 }
-
 
 
 .projects {
@@ -216,7 +216,7 @@ ul li {
     padding: 1px 2px;
     margin: 1px 0;
 }
-grade {
+.grade {
     float: right;
     background-color: rgba(107, 115, 138, 0.3);
     border-bottom: 1px solid rgba(107, 115, 138, 0.5);
@@ -251,7 +251,7 @@ grade {
     display: block;
     line-height: normal;
     padding: 5px 2px 0 2px;
-    margin: 0;
+    margin: 2px 0;
 }
 .svg-icon {
     vertical-align: middle;
@@ -268,9 +268,9 @@ grade {
 } */
 
 
-.black {
+/* .black {
     color: #000;
-}
+} */
 
 @media (max-width: 450px) {
     .page {
