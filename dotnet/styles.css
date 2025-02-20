@@ -1,15 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
     font-size: 13px;
 }
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+}
+* {
+    box-sizing: border-box;
 }
 
 h1 {
@@ -33,7 +31,7 @@ h4 {
 }
 
 a {
-    color: white;
+    color: rgb(0, 124, 87);
     text-decoration: none;
     margin-top: 0;
 }
@@ -41,10 +39,10 @@ a:hover {
     color: rgb(138, 153, 170) !important;
 }
 a:active {
-    color: white;
+    color: rgb(0, 124, 87);
 }
 a:visited {
-    color: white;
+    color: rgb(0, 124, 87);
 }
 
 ul {
@@ -53,110 +51,91 @@ ul {
 }
 ul li {
     margin-left: -15px;
-    padding-bottom: 0;
+    padding-bottom: 5px;
 }
 
-/* FIRST PAGE CONTAINER */
+/* PAGE CONTAINER */
 
 .page {
-    border: 0px solid red;
-    background-color: aliceblue;
-    display: grid;
-    grid-template-columns: 30% 70%;
     max-width: 700px;
     margin: 0 auto;
     height: 100%;
 }
-.box-left {
-    background-color: rgb(42, 45, 55);
-    color: white;
-    padding: 25px;
-}
-.box-right {
-    background-color: whitesmoke;
-    padding: 25px;
-}
-
-/* PAGES FROM TWO */
-
 .page-container {
-    /* background-color: whitesmoke; */
     border: 1px solid whitesmoke;
-    box-sizing: border-box;
+    border-top: none;
     display: flex;
     flex-direction: column;
     max-width: 700px;
     height: 100%;
-    margin: 0 auto;
-}
-.page-child {
-    /* background-color: whitesmoke; */
-    padding: 0 30px;
-}
-.page-child:first-child {
-    padding-top: 30px;
-}
-.page-child:last-child {
-    padding-bottom: 30px;
-}
-
-/* .dark-background {
-    background-color: rgb(42, 45, 55);
-} */
-
-/* ******************* ABOVE OK */
-
-.pad-zero {
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-.pad-b-zero {
-    padding-top: 25px;
-    padding-bottom: 0;
-}
-.photo {
-    background-color: rgb(42, 45, 55);
-    padding-bottom: 0;
-}
-.photo img {
-    border: 5px solid rgba(255, 255, 255, 0.9);
-    border-radius: 10%;
-    object-fit: cover;
-    width: 100px;
-    vertical-align: bottom;
+    padding: 30px;
     margin: 0 auto;
 }
 
-/* #second-left-side {
-    display: none;
-}
-.second-botton {
-    display: none;
-} */
+/* HEADER */
 
-.title-box {
+.header {
     background-color: aquamarine;
-    position: relative;
-    padding: 15px 25px;
-    margin: 25px 0 0 0;
+    color: rgb(0, 124, 87);
+    padding: 30px;
+    margin: 0;
 }
-.title-box > div {
-    padding-left: 0;
-}
-.title-box h1 {
+.header h1 {
+    border: none;
     color:  rgba(0, 104, 104, 0.9);
     text-transform: uppercase;
     padding: 0;
     margin: 0;
 }
-.title-box p {
+.job-title {
     color: rgb(0, 124, 87);
-    margin: 5px 0;
+    font-size: 1.1rem;
+    margin: 2px 0;
+    padding-bottom: 6px;
+}
+.head-links {
+    border-top: 1px solid rgba(107, 115, 138, 0.5);
+    padding-top: 3px;
+}
+.contact {
+    padding: 0;
+    margin: 0;
+}
+.contact span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+.profile {
+    padding: 0;
+    margin: 0;
+}
+.profile span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+}
+.dot {
+    margin: 0 10px;
 }
 
-/* MAIN CONTENT */
+.page-number {
+    position:sticky;
+    
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+}
 
+.experience {
+    margin: 0;
+}
 .experience h4 {
     display: inline-block;
     margin: 0;
@@ -169,10 +148,12 @@ ul li {
     font-size: 0.8rem;
     padding: 1px 7px;
 }
+.div-content {
+    padding: 7px 0;
+}
 .description {
     font-size: 1rem;
 }
-
 
 .projects {
     display: grid;
@@ -189,134 +170,31 @@ ul li {
     margin-bottom: 8px;
 }
 
-/* LEFT SIDE */
-
-.contact {
-    color:blanchedalmond;
-    font-weight: 500;
-}
-
-.info {
-    padding: 0;
-    margin: 0;
-}
-.info span {
-    display: inline-block;
-    padding-top: 5px;
-}
-.badge {
-    background-color: rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-}
-.border-bottom {
-    border-bottom: 1px solid rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-}
-
-.education span {
-    display: block;
-    padding: 1px 2px;
-    margin: 1px 0;
-}
-.grade {
-    float: right;
-    background-color: rgba(107, 115, 138, 0.3);
-    border-bottom: 1px solid rgba(107, 115, 138, 0.5);
-    border-right: 1px solid rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-    padding: 1px 7px;
-}
-.education span:last-child {
-    border-bottom: 1px solid rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-    padding: 0 0 5px 0;
-}
-
-.skills span {
-    display: inline-block;
-    background-color: rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-    padding: 0 5px 2px 5px;
-    margin: 2px 0;
-}
-.personal span {
-    display: block;
-    border-bottom: 1px solid rgba(107, 115, 138, 0.5);
-    border-radius: 4px;
-    padding: 0 5px 2px 2px;
-    margin: 2px 0;
-}
-
-/* PROFILE LINKS */
-
-.profile-links span {
-    display: block;
-    line-height: normal;
-    padding: 5px 2px 0 2px;
-    margin: 2px 0;
-}
-.svg-icon {
-    vertical-align: middle;
-}
-
-/* @media (max-width: 700px) {
-    .title-box {
-        left: 0px;
-        margin: 0;
-        padding: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-} */
-
-
-/* .black {
-    color: #000;
-} */
-
 @media (max-width: 450px) {
     .page {
         grid-template-columns: 100%;
     }
-    .page-break {
-        display: none;
+    .page-container {
+        padding: 20px;
     }
-    .second-left {
-        display: none;
-    }
-    .second-botton {
-        display: block;
+    .header {
+        padding: 20px;
     }
 
-    .photo {
-        display: inline;
-        margin: 0 auto;
+    .profile span {
+        display: block;
     }
-    .photo img {
-        margin: 25px 0;
+    .profile .dot {
+        display: none;
     }
-    .pad-zero {
-        padding: 0;
-    }
-    .pad-b-zero {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .title-box {
-        left: 0px;
-        margin: 0;
-        padding: 10px 0;
-        width: 100%;
-    }
-    .title-box div {
-        padding-left: 25px;
-    }
-    #objective {
+
+    .page-break {
         display: none;
     }
 }
 
 /* Page break for printing */
+
 @media print {
     body {
         margin: 0;                          /* Reset margin for body when printing */
@@ -325,5 +203,8 @@ ul li {
         /* page-break-before: always; */    /* Ensure new page starts here */
         page-break-after: always;           /* Ensures separation between sections */
         margin: 0;                          /* Remove margin around page break */
+    }
+    .page-container {
+        border-top: 1px solid whitesmoke;
     }
 }
